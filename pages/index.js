@@ -5,14 +5,12 @@ import RecentActivity from "../components/RecentActivity"
 
 export default function Home() {
 	return (
-		<div className="max-w-[1000px] mx-auto flex">
+		<div className="max-w-[1000px] mx-auto">
 			<div>
-				<Balance />
-				<RecentActivity />
+				<Balance balance={633.83} />
+				{/* <RecentActivity /> */}
 			</div>
-			<div>
-				<ExploreCard />
-			</div>
+			<div>{/* <ExploreCard /> */}</div>
 		</div>
 	)
 }
