@@ -7,9 +7,13 @@ module.exports = {
 	theme: {
 		extend: {
 			spacing: {
+				1.5: "6px",
 				3.5: "14px",
 				4.5: "18px",
 				7.5: "30px",
+			},
+			borderRadius: {
+				"4xl": "30px",
 			},
 		},
 	},

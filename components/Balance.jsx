@@ -7,7 +7,7 @@ import { SiNextdotjs } from "react-icons/si"
 
 const Balance = ({ balance }) => {
 	return (
-		<div className="text-center">
+		<div className="text-center rounded-lg border-2 border-neutral-100 basis-3/5 shrink-0 grow-1 mr-10 mb-10">
 			<div className="font-semibold text-5xl">{`\$${balance} USD`}</div>
 			<div className="mt-2.5">Available Balance</div>
 			<div className="flex justify-center mx-3.5 my-7.5">
@@ -42,9 +42,9 @@ const Balance = ({ balance }) => {
 			</div>
 			<div className="py-4 px-3.5 border-y border-neutral-100">
 				<div className="flex justify-between">
-					<div>
-						<SiNextdotjs style={{ display: "inline" }} />
-						<div className="">
+					<div className="inline-flex items-center">
+						<SiNextdotjs style={{ fontSize: "28px" }} />
+						<div className="ml-3.5">
 							<p className="font-bold">{"NEAR"}</p>
 							<p className="text-sm text-gray-600 mt-1.5">
 								{"$3.25"}
