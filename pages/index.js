@@ -10,7 +10,7 @@ export default function Home() {
 				<Balance balance={633.83} />
 				<RecentActivity />
 			</div>
-			<div className="basis-1/3">
+			<div className="">
 				<ExploreCard />
 			</div>
 		</div>

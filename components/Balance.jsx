@@ -4,9 +4,9 @@ import { SiNextdotjs } from "react-icons/si"
 import { AiOutlineInfoCircle } from "react-icons/ai"
 
 const Balance = ({ balance }) => {
-	const [showTooltip, setShowTooltip] = useState(true)
+	const [showTooltip, setShowTooltip] = useState(false)
 	return (
-		<div className="text-center rounded-lg border border-neutral-100 py-4">
+		<div className="text-center rounded-lg border-2 border-neutral-100 py-4">
 			<div className="font-bold text-5xl">{`\$${balance} USD`}</div>
 
 			<div className="relative text-sm text-gray-600 mt-2.5">

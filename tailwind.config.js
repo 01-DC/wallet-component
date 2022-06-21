@@ -16,6 +16,10 @@ module.exports = {
 			borderRadius: {
 				"4xl": "30px",
 			},
+			flexBasis: {
+				"2/3": "67%",
+				"1/3": "33%",
+			},
 		},
 	},
 	plugins: [],
