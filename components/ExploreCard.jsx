@@ -2,7 +2,7 @@ import React from "react"
 
 const ExploreCard = () => {
 	return (
-		<div className="text-center bg-black text-white rounded-lg basis-2/5 shrink-0 grow-1 mb-10 py-7.5 px-6">
+		<div className="text-center bg-black text-white rounded-lg py-7.5 px-6">
 			<h2 className="font-black text-xl my-4">{"What's on NEAR?"}</h2>
 			<p className="mb-4 text-sm text-gray-200">
 				{

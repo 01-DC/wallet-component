@@ -1,41 +1,12 @@
 import React from "react"
 
-import { FiSend } from "react-icons/fi"
-import { AiOutlinePlusCircle } from "react-icons/ai"
-import { BsArrow90DegDown, BsArrowDownUp } from "react-icons/bs"
 import { SiNextdotjs } from "react-icons/si"
 
 const Balance = ({ balance }) => {
 	return (
-		<div className="text-center rounded-lg border-2 border-neutral-100 basis-3/5 shrink-0 grow-1 mr-10 mb-10">
-			<div className="font-semibold text-5xl">{`\$${balance} USD`}</div>
-			<div className="mt-2.5">Available Balance</div>
-			<div className="flex flex-wrap justify-center mx-3.5 my-7.5">
-				<button className="mx-4.5 my-5 text-sm text-gray-600">
-					<div className="bg-slate-800 hover:bg-black rounded-2xl text-white text-2xl mb-2.5 p-4">
-						<FiSend />
-					</div>
-					Send
-				</button>
-				<button className="mx-4.5 my-5 text-sm text-gray-600">
-					<div className="bg-slate-800 hover:bg-black rounded-2xl text-white text-2xl mb-2.5 p-4">
-						<BsArrow90DegDown />
-					</div>
-					Receive
-				</button>
-				<button className="mx-4.5 my-5 text-sm text-gray-600">
-					<div className="bg-slate-800 hover:bg-black rounded-2xl text-white text-2xl mb-2.5 p-4">
-						<AiOutlinePlusCircle />
-					</div>
-					Top Up
-				</button>
-				<button className="mx-4.5 my-5 text-sm text-gray-600">
-					<div className="bg-slate-800 hover:bg-black rounded-2xl text-white text-2xl mb-2.5 p-4">
-						<BsArrowDownUp />
-					</div>
-					Swap
-				</button>
-			</div>
+		<div className="text-center rounded-lg border border-neutral-100 py-4">
+			<div className="font-bold text-5xl">{`\$${balance} USD`}</div>
+			<div className="mt-2.5">{"Available Balance"}</div>
 			<div className="flex justify-between text-sm text-gray-600 px-5 mt-5 mb-4">
 				<p>Your Portfolio</p>
 				<p>Token Balance</p>

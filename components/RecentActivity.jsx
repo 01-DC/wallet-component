@@ -6,7 +6,7 @@ import { BsArrow90DegDown } from "react-icons/bs"
 
 const RecentActivity = () => {
 	return (
-		<div className="text-center rounded-lg border-2 border-neutral-100 basis-3/5 shrink-0 grow-1 mr-10 p-5">
+		<div className="text-center rounded-lg border border-neutral-100 p-5">
 			<h2 className="font-black text-xl mb-4">{"Recent Activity"}</h2>
 
 			{/* One row of info */}
