@@ -10,7 +10,7 @@ const Balance = ({ balance }) => {
 		<div className="text-center rounded-lg border-2 border-neutral-100 basis-3/5 shrink-0 grow-1 mr-10 mb-10">
 			<div className="font-semibold text-5xl">{`\$${balance} USD`}</div>
 			<div className="mt-2.5">Available Balance</div>
-			<div className="flex justify-center mx-3.5 my-7.5">
+			<div className="flex flex-wrap justify-center mx-3.5 my-7.5">
 				<button className="mx-4.5 my-5 text-sm text-gray-600">
 					<div className="bg-slate-800 hover:bg-black rounded-2xl text-white text-2xl mb-2.5 p-4">
 						<FiSend />
