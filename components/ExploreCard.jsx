@@ -1,6 +1,14 @@
-import React from "react"
+import React, { useState } from "react"
+import Toast from "./Toast"
 
 const ExploreCard = () => {
+	const [toastList, setToastList] = useState([])
+
+	function showToast(desc, color) {
+		const newToast = { description: `${desc}`, bgColor: `${color}` }
+		setToastList([...toastList, newToast])
+	}
+
 	return (
 		<div className="text-center bg-black text-white rounded-lg py-7.5 px-6">
 			<h2 className="font-black text-xl my-4">{"What's on NEAR?"}</h2>
@@ -10,13 +18,18 @@ const ExploreCard = () => {
 				}
 			</p>
 			<div className="flex justify-between gap-2">
-				<button className="basis-1/2 text-sm text-blue-300 font-semibold rounded-4xl mt-9 py-4 border-2 border-gray-700 bg-gray-700 hover:bg-black transition">
+				<button
+					className="basis-1/2 text-sm text-blue-300 font-semibold rounded-4xl mt-9 py-4 border-2 border-gray-700 bg-gray-700 hover:bg-black transition"
+					onClick={() => showToast("Explore Apps", "bg-black")}>
 					{"Explore Apps"}
 				</button>
-				<button className="basis-1/2 text-sm text-blue-300 font-semibold rounded-4xl mt-9 px-7 py-4 border-2 border-gray-700 bg-gray-700 hover:bg-black transition">
+				<button
+					className="basis-1/2 text-sm text-blue-300 font-semibold rounded-4xl mt-9 px-7 py-4 border-2 border-gray-700 bg-gray-700 hover:bg-black transition"
+					onClick={() => showToast("Explore DeFi", "bg-blue-800")}>
 					{"Explore DeFi"}
 				</button>
 			</div>
+			<Toast toasts={toastList} setToasts={setToastList} />
 		</div>
 	)
 }
