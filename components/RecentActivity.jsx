@@ -1,10 +1,13 @@
 import React from "react"
+import { useAppContext } from "../contexts/AppContext"
 
 import { FiKey } from "react-icons/fi"
 import { VscAccount } from "react-icons/vsc"
 import { BsArrow90DegDown } from "react-icons/bs"
 
 const RecentActivity = () => {
+	const { showToast } = useAppContext()
+
 	return (
 		<div className="text-center rounded-lg border border-neutral-100 p-5">
 			<h2 className="font-black text-xl mb-4">{"Recent Activity"}</h2>
@@ -94,7 +97,9 @@ const RecentActivity = () => {
 				</div>
 			</div>
 
-			<button className="w-full text-sm text-blue-600 font-semibold rounded-4xl mt-9 py-4 border-2 border-neutral-100 bg-neutral-100 hover:bg-white transition">
+			<button
+				className="w-full text-sm text-blue-600 font-semibold rounded-4xl mt-9 py-4 border-2 border-neutral-100 bg-neutral-100 hover:bg-white transition"
+				onClick={() => showToast("View All", "bg-green-800")}>
 				{"View All"}
 			</button>
 		</div>

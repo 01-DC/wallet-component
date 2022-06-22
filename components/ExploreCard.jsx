@@ -1,13 +1,8 @@
-import React, { useState } from "react"
-import Toast from "./Toast"
+import React from "react"
+import { useAppContext } from "../contexts/AppContext"
 
 const ExploreCard = () => {
-	const [toastList, setToastList] = useState([])
-
-	function showToast(desc, color) {
-		const newToast = { description: `${desc}`, bgColor: `${color}` }
-		setToastList([...toastList, newToast])
-	}
+	const { showToast } = useAppContext()
 
 	return (
 		<div className="text-center bg-black text-white rounded-lg py-7.5 px-6">
@@ -29,7 +24,6 @@ const ExploreCard = () => {
 					{"Explore DeFi"}
 				</button>
 			</div>
-			<Toast toasts={toastList} setToasts={setToastList} />
 		</div>
 	)
 }

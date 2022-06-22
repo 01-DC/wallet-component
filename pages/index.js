@@ -2,6 +2,7 @@ import React from "react"
 import Balance from "../components/Balance"
 import ExploreCard from "../components/ExploreCard"
 import RecentActivity from "../components/RecentActivity"
+import Toast from "../components/Toast"
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 			<div className="">
 				<ExploreCard />
 			</div>
+			<Toast />
 		</div>
 	)
 }
